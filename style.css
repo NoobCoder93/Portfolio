@@ -3,13 +3,13 @@
     display: flex;                       /* already had this, removed duplicate */
     justify-content: space-between;      /* pushes name left, nav right */
     align-items: center;                 /* keeps them vertically aligned */
-    height: 80px;
+    height: 60px;
     
     /* Spacing */
     padding: 10px 20px;                  /* kept one, removed duplicate */
     
     /* Typography */
-    font-family: 'Crimson Text', serif;
+    font-family: 'Khand', sans-serif;
     font-size: 1.2rem;
     
     /* Styling */
@@ -33,7 +33,7 @@
   
 .container {
     display: flex;
-    height: 80vh; /* full screen height */
+    height: 85vh; /* full screen height */
   }
   
   .left {
@@ -48,12 +48,64 @@
 
   .right {
     flex: 1;
-    background-color: #f4a261;
+    background-color: #ffffff;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* 👈 push content to bottom */
     align-items: flex-start;   /* 👈 keep text left-aligned */
-    color: white;
+    color: rgb(40, 40, 40);
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between; /* left box + right side */
+    padding: 20px;
+    border-top: 2px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .footer-left {
+    flex: 1;               /* takes up half the screen */
+    background-color: #e0e0e0; /* temp color so you can see it */
+    padding: 20px;
+    height: 15vh;
+  }
+  
+  .footer-right {
+    display: flex;
+    gap: 30px;             /* space between the two lists */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 8px; /* space between heading and list */
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .footer-links,
+  .footer-socials {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li,
+  .footer-socials li {
+    margin: 8px 40px;         /* vertical stacking */
+  }
+  
+  .footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .footer-heading {
+    font-weight: bold;        /* makes the text thicker (bold) */
+    text-transform: uppercase; /* forces all letters to be UPPERCASE */
+    margin-bottom: 8px;       /* adds space below the heading so the next list item isn’t too close */
+    font-family: 'Roboto', serif;
   }
   
