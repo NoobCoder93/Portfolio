@@ -1,0 +1,17 @@
+#header h1
+{
+    margin:0;
+    padding:0;
+    padding-left:7px;
+    display:inline;
+}
+
+ul#menu
+{
+    width:85%;
+    float: right;
+    display:inline;
+    padding: 0 0 2px;
+    margin: 0;
+    text-align: right;
+}
