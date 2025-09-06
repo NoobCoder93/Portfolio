@@ -1,17 +1,19 @@
-#header h1
-{
-    margin:0;
-    padding:0;
-    padding-left:7px;
-    display:inline;
+.header {
+    display: flex;
+    justify-content: space-between; /* pushes name left, nav right */
+    align-items: center;            /* keeps them vertically aligned */
+    padding: 10px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ccc; /* thin line across */
 }
-
-ul#menu
-{
-    width:85%;
-    float: right;
-    display:inline;
-    padding: 0 0 2px;
-    margin: 0;
-    text-align: right;
+  
+.nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
+  
+ 
