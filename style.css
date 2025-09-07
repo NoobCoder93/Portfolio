@@ -1,28 +1,27 @@
 .header {
     /* Layout */
-    display: flex;                       /* already had this, removed duplicate */
-    justify-content: space-between;      /* pushes name left, nav right */
-    align-items: center;                 /* keeps them vertically aligned */
+    display: flex;                       
+    justify-content: space-between;      
+    align-items: center;                 
     height: 60px;
     
     /* Spacing */
-    padding: 10px 20px;                  /* kept one, removed duplicate */
+    padding: 10px 20px;                  
     
     /* Typography */
     font-family: 'Khand', sans-serif;
     font-size: 1.2rem;
     
     /* Styling */
-    border-bottom: 2px solid #ccc;       /* kept one, removed duplicate */
-    background-color: #fff;              /* makes sure header doesn’t overlap transparently */
+    border-bottom: 2px solid #ccc;       
+    background-color: #fff;              
     
     /* Sticky header behavior */
     position: sticky;
     top: 0;
-    z-index: 1000;                       /* keeps it above other elements */
+    z-index: 1000;                       
 }
 
-  
 .nav a {
     margin-left: 20px;
     text-decoration: none;
@@ -34,78 +33,127 @@
 .container {
     display: flex;
     height: 85vh; /* full screen height */
-  }
+}
   
-  .left {
+.left {
     flex: 2; /* bigger portion */
-  }
+}
   
-  .left img {
+.left img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* keeps image proportion but fills area */
-  }
+}
 
-  .right {
+.right {
     flex: 1;
     background-color: #ffffff;
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* 👈 push content to bottom */
-    align-items: flex-start;   /* 👈 keep text left-aligned */
+    justify-content: flex-end; /* push content to bottom */
+    align-items: flex-start;   /* keep text left-aligned */
     color: rgb(40, 40, 40);
     font-family: 'Roboto', sans-serif;
-  }
-  
-  .footer {
+}
+
+/* -------------------- FOOTER -------------------- */
+.footer {
     display: flex;
-    justify-content: space-between; /* left box + right side */
+    justify-content: space-between; 
     padding: 20px;
-    border-top: 2px solid #ccc;
-    background-color: #f9f9f9;
-  }
-  
-  .footer-left {
-    flex: 1;               /* takes up half the screen */
-    background-color: #e0e0e0; /* temp color so you can see it */
+    border-top: 2px solid #ffffff;
+    background-color: #ffffff;
+}
+
+/* Contact form area */
+.footer-form {
+    flex: 1;               
     padding: 20px;
-    height: 15vh;
-  }
-  
-  .footer-right {
     display: flex;
-    gap: 30px;             /* space between the two lists */
-  }
-  
-  .footer-section h4 {
-    margin-bottom: 8px; /* space between heading and list */
+    flex-direction: column;  /* 👈 stacks form elements vertically */
+    max-width: 400px;       
+}
+
+.footer-form h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-form label {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.footer-form input,
+.footer-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.footer-form input {
+    height: 35px;
+    width: 100%;
+}
+
+.footer-form textarea {
+    width: 100%;
+    resize: vertical; /* lets user resize only up/down */
+}
+
+.footer-form button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    background-color: #555;
+}
+
+/* Links + Socials area */
+.footer-right {
+    display: flex;
+    gap: 30px;             
+}
+
+.footer-section h4 {
+    margin-bottom: 8px; 
     font-size: 1rem;
     font-weight: bold;
-  }
-  
-  .footer-links,
-  .footer-socials {
+}
+
+.footer-links,
+.footer-socials {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .footer-links li,
-  .footer-socials li {
-    margin: 8px 40px;         /* vertical stacking */
-  }
-  
-  .footer a {
+}
+
+.footer-links li,
+.footer-socials li {
+    margin: 8px 0; /* vertical stacking */
+}
+
+.footer a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-  }
+}
 
-  .footer-heading {
-    font-weight: bold;        /* makes the text thicker (bold) */
-    text-transform: uppercase; /* forces all letters to be UPPERCASE */
-    margin-bottom: 8px;       /* adds space below the heading so the next list item isn’t too close */
+.footer-heading {
+    font-weight: bold;        
+    text-transform: uppercase; 
+    margin-bottom: 8px;       
     font-family: 'Roboto', serif;
-  }
-  
+}
