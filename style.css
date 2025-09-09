@@ -1,9 +1,10 @@
 .header {
-    /* Layout */
-    display: flex;                       
-    justify-content: space-between;      
-    align-items: center;                 
-    height: 60px;
+  /* Layout */
+    display: flex;              /* puts items in a row */
+    justify-content: space-between; /* pushes one to the left, one to the right */
+    align-items: center;        /* lines them up in the middle (up and down) */
+    height: 60px;               /* makes the header 60px tall */
+
     
     /* Spacing */
     padding: 10px 20px;                  
@@ -13,14 +14,16 @@
     font-size: 1.2rem;
     
     /* Styling */
-    border-bottom: 2px solid #ccc;       
-    background-color: #fff;              
+    border-bottom: 2px solid #132048;       
+    background-color: #ffffff;              
     
     /* Sticky header behavior */
     position: sticky;
     top: 0;
     z-index: 1000;                       
 }
+
+/* -------------------- ABOUT -------------------- */  
 
 .nav a {
     margin-left: 20px;
@@ -30,32 +33,118 @@
     font-size: 1.3rem;
 }
   
-.container {
+.about-container {
     display: flex;
-    height: 85vh; /* full screen height */
-}
+    height: 100vh;              /* full screen height */
+    width: 100%;
+  }
   
-.left {
-    flex: 2; /* bigger portion */
-}
+  .about-image {
+    flex: 1;                     /* takes half the width */
+    height: 100vh;
+    overflow: hidden;
+  }
   
-.left img {
+  .about-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* keeps image proportion but fills area */
-}
-
-.right {
-    flex: 1;
-    background-color: #ffffff;
-    padding: 10px 20px;
+    object-fit: cover;            /* makes sure image fills without distortion */
+  }
+  
+  .about-content {
+    flex: 1;                     /* other half of the screen */
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* push content to bottom */
-    align-items: flex-start;   /* keep text left-aligned */
-    color: rgb(40, 40, 40);
+    justify-content: flex-start; /* align to the left */
+    align-items: flex-end;       /* stick to the bottom */
+    padding: 40px;
+    background-color: #ffffff;   /* or any background color you like */
+  }
+  
+  .about-text h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Khand', sans-serif;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.5;
     font-family: 'Roboto', sans-serif;
-}
+  }
+  
+/* -------------------- TOOLS -------------------- */  
+.tools {
+    text-align: center;       /* center heading + icons */
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* light background for contrast */
+  }
+  
+  .tools h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: 'Khand', sans-serif;
+  }
+  
+  .tools-logos {
+    display: flex;
+    justify-content: center;  /* centers the icons horizontally */
+    flex-wrap: wrap;          /* allows wrapping on smaller screens */
+    gap: 30px;                /* space between logos */
+  }
+  
+  .tools-logos img {
+    width: 60px;              /* adjust size as needed */
+    height: auto;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .tools-logos img:hover {
+    transform: scale(1.2);    /* little zoom effect on hover */
+  }
+  
+/* -------------------- RESUME -------------------- */
+
+<!-- Resume Section -->
+<section class="resume" id="resume">
+  <h2>Resume</h2>
+  <div class="timeline">
+
+    <!-- Timeline item -->
+    <div class="timeline-item">
+      <div class="timeline-date">2024</div>
+      <div class="timeline-content">
+        <h3>Customer Service Representative</h3>
+        <h4>ABC Company</h4>
+        <p>Assisted clients with inquiries, resolved technical issues, and maintained customer satisfaction through clear communication.</p>
+      </div>
+    </div>
+
+    <!-- Timeline item -->
+    <div class="timeline-item">
+      <div class="timeline-date">2022</div>
+      <div class="timeline-content">
+        <h3>Lead Generation Specialist</h3>
+        <h4>XYZ Corporation</h4>
+        <p>Managed a pipeline of prospects, conducted outreach, and collaborated with sales teams to hit monthly targets.</p>
+      </div>
+    </div>
+
+    <!-- Timeline item -->
+    <div class="timeline-item">
+      <div class="timeline-date">2020</div>
+      <div class="timeline-content">
+        <h3>Technical Support</h3>
+        <h4>123 Solutions</h4>
+        <p>Provided troubleshooting support, documented solutions, and improved response time for customer issues.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 /* -------------------- FOOTER -------------------- */
 .footer {
