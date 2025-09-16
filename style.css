@@ -1,5 +1,7 @@
 * {
   font-family: 'Poppins', sans-serif !important;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .header {
@@ -43,6 +45,7 @@
     height: 100vh;              /* full screen height */
     width: 100%;
   }
+  
   
   .about-image {
     flex: 1;                     /* takes half the width */
