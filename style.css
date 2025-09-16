@@ -143,27 +143,27 @@
 }
 
 .timeline-item:nth-child(1) {
-  background: url("/image/healthcare.webp") no-repeat center/cover;
+  background: url("image/healthcare.webp") no-repeat center/cover;
   color: #fff;
 }
 
 .timeline-item:nth-child(2) {
-  background: url("/image/Leads.jpg") no-repeat center/cover;
+  background: url("image/Leads.jpg") no-repeat center/cover;
   color: #fff;
 }
 
 .timeline-item:nth-child(3) {
-  background: url("/image/Leads.jpg") no-repeat center/cover;
+  background: url("image/Leads.jpg") no-repeat center/cover;
   color: #fff;
 }
 
 .timeline-item:nth-child(4) {
-  background: url("/image/ecommerce.webp") no-repeat center/cover;
+  background: url("image/ecommerce.webp") no-repeat center/cover;
   color: #fff;
 }
 
 .timeline-item:nth-child(5) {
-  background: url("/image/technical.jpg") no-repeat center/cover;
+  background: url("image/technical.jpg") no-repeat center/cover;
   color: #fff;
 }
 /* -------------------- FOOTER -------------------- */
