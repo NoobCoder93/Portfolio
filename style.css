@@ -15,7 +15,6 @@
     padding: 10px 20px;                  
     
     /* Typography */
-    font-family: 'Khand', sans-serif;
     font-size: 1.2rem;
     
     /* Styling */
@@ -70,13 +69,11 @@
     margin-bottom: 15px;
     font-size: 2rem;
     font-weight: bold;
-    font-family: 'Khand', sans-serif;
   }
   
   .about-text p {
     font-size: 1rem;
     line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
   }
   
 /* -------------------- TOOLS -------------------- */  
@@ -89,7 +86,7 @@
   .tools h2 {
     font-size: 3rem;
     margin-bottom: 20px;
-    font-family: 'Khand', sans-serif;
+
   }
   
   .tools-logos {
@@ -183,11 +180,10 @@
     display: flex;
     flex-direction: column;  /* 👈 stacks form elements vertically */
     max-width: 400px;    
-    font-family: 'khand', sans-serif;
+
 }
 
 .footer-form p {
-  font-family: 'Khand', sans-serif;
   font-size: 3rem;
   font-weight: bold;
 }
@@ -227,7 +223,6 @@
     color: rgb(219, 219, 219);
     font-weight: bold;
     cursor: pointer;
-    font-family: 'khand', sans-serif;
     margin-left: 50px;
     margin-right: 50px;
     font-size: 1.2rem;
@@ -254,7 +249,6 @@
     list-style: none;
     margin: 0;
     padding-right: 50px;
-    font-family: 'khand', sans-serif;
 }
 
 .footer-links li,
@@ -264,7 +258,7 @@
 
 .footer a {
     text-decoration: none;
-    color: #333;
+    color: #1d1c1c;
     font-weight: 500;
 }
 
@@ -272,5 +266,4 @@
     font-weight: bold;        
     text-transform: uppercase; 
     margin-bottom: 8px;       
-    font-family: 'khand', sans-serif;
 }
