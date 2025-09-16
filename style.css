@@ -1,5 +1,10 @@
+* {
+  font-family: 'Poppins', sans-serif !important;
+}
+
 .header {
   /* Layout */
+  
     display: flex;              /* puts items in a row */
     justify-content: space-between; /* pushes one to the left, one to the right */
     align-items: center;        /* lines them up in the middle (up and down) */
@@ -108,72 +113,58 @@
   }
   
 /* -------------------- RESUME -------------------- */
-.resume h2 {
-  font-size: 3rem;
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 30px; /* space between columns */
+  margin-top: 40px;
 }
 
-.resume h3 {
-  font-size: 1.5rem;
-}
-
-.resume h4 {
-  font-size: 1.2rem;
-}
-
-.timeline-date {
-  font-size: 1.2rem;
-}
-
-/* Main container */
-.resume-section {
+.timeline-item {
+  /* background: rgba(255, 255, 255, 0.8); /* optional: gives contrast on bg */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
 }
 
-/* Background image */
-/* Main container */
-.resume-section {
-  position: relative;
-  width: 100%;
-  min-height: 250vh;   /* ⬅️ Change this to adjust the height of the whole section/image */
-  display: flex;
-  justify-content: flex-start;  /* pushes content to the left */
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Background image */
-.resume-bg {
+.timeline-item::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 105%;   /* ⬅️ This makes the image fill the height of .resume-section */
-  background: url("/image/Formal2.jpg") no-repeat center center/cover;
-  opacity: 0.5;   /* 70% opacity */
-  z-index: 1;
+  inset: 0;
+  background: rgba(0,0,0,0.45); /* adjust darkness */
 }
 
-/* Foreground content */
-.resume-content {
+.timeline-content {
   position: relative;
-  z-index: 2;
-  opacity: 90%;
-  padding: 40px;
-  border-radius: 8px;
-  max-width: 600px;
-  width: 50%;   /* takes half of the screen width */
-  margin-left: 50px;  /* small margin from the edge */
-  font-family: 'khand', sans-serif;
+  z-index: 1; /* keep text above overlay */
+  color: #fff;
 }
 
-.resume-content h2 {
-  font-size: 3rem;
+.timeline-item:nth-child(1) {
+  background: url("/image/healthcare.webp") no-repeat center/cover;
+  color: #fff;
+}
+
+.timeline-item:nth-child(2) {
+  background: url("/image/Leads.jpg") no-repeat center/cover;
+  color: #fff;
+}
+
+.timeline-item:nth-child(3) {
+  background: url("/image/Leads.jpg") no-repeat center/cover;
+  color: #fff;
+}
+
+.timeline-item:nth-child(4) {
+  background: url("/image/ecommerce.webp") no-repeat center/cover;
+  color: #fff;
+}
+
+.timeline-item:nth-child(5) {
+  background: url("/image/technical.jpg") no-repeat center/cover;
+  color: #fff;
 }
 /* -------------------- FOOTER -------------------- */
 .footer {
