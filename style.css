@@ -18,7 +18,7 @@
     font-size: 1.2rem;
     
     /* Styling */
-    border-bottom: 2px solid #132048;       
+    border-bottom: 2px solid #000000;       
     background-color: #ffffff;              
     
     /* Sticky header behavior */
@@ -80,7 +80,7 @@
 .tools {
     text-align: center;       /* center heading + icons */
     padding: 40px 20px;
-    background-color: #f9f9f9; /* light background for contrast */
+    background-color: #ffffff; /* light background for contrast */
   }
   
   .tools h2 {
@@ -111,6 +111,10 @@
   }
   
 /* -------------------- RESUME -------------------- */
+.resume-content h2 {
+  font-size: 2rem;
+}
+
 .timeline {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
